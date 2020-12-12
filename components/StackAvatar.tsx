@@ -1,8 +1,10 @@
-type StackAvatar = {
-    srcArray : [string]
+import { FC } from "react";
+
+type StackAvatarProps = {
+    srcArray : string[]
 }
 
-const StackAvatar = ({srcArray}) => {
+const StackAvatar : FC<StackAvatarProps> = ({srcArray}) => {
     const count = srcArray.length;
     return (<>
         <div className="flex">
